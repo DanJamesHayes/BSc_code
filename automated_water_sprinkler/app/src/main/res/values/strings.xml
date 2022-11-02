@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Android MQTT Demo UI</string>
+    <string name="_32">32</string>
+</resources>
