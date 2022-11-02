@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Film Database</title>
+<link rel="stylesheet"
+      href="./css/styles.css"
+      type="text/css"/>
+<script src="scripts/jquery.js"></script>
+<script src="scripts/js-functions.js"></script>
+<script src="scripts/ajax-calls.js"></script>
+</head>
+<body>
+<h1 class="title" align="center">Films Database</h1>
+<div align="center">
+<fieldset>
+  <legend>Show all films</legend>
+  <br />
+  <b>Return type:</b>
+  <br />
+  <input type="radio" name="showFormat" value="json" />JSON<br />
+  <input type="radio" name="showFormat" value="xml" />XML<br />
+  <input type="radio" name="showFormat" value="string" />String<br />
+  <br />
+  <input type="button" value="Show Films" id="getAllFilms" />
+  <br /><br />
+</fieldset>
+<br />
+<table id="allFilms"></table>
+<br />
+<fieldset>
+  <legend>Search for films</legend>
+  <br />
+  <input type="text" name="searchValue" size="50" 
+  			placeholder="Search by id, title, year, director or stars..." />
+  <br /><br />
+  <b>Return type:</b>
+  <br />
+  <input type="radio" name="searchFormat" value="json"/>JSON<br />
+  <input type="radio" name="searchFormat" value="xml"/>XML<br />
+  <input type="radio" name="searchFormat" value="string"/>String<br />
+  <br />
+  <input type="button" value="Search" id="getFilm" />
+  <br /><br />
+</fieldset>
+<br />
+<table id="searchResult"></table>
+<br />
+<fieldset>
+<legend>Add film to database</legend>
+  <p><b>Enter film details:</b></p>
+  <label>Title:</label>
+  <br />
+  <input type="text" name="addTitle" size="75" />
+  <br /><br />
+  <label>Year:</label>
+  <br />
+  <input type="text" name="addYear" size="4" />
+  <br /><br />
+  <label>Director:</label>
+  <br />
+  <input type="text" name="addDirector" size="40" />
+  <br /><br />
+  <label>Stars:</label>
+  <br />
+  <input type="text" name="addStars" size="100" />
+  <br /><br />
+  <label>Review:</label>
+  <br />
+  <input type="text" name="addReview" size="100" />
+  <br /><br />
+  <input type="button" value="Insert" id="addFilm" />
+  <br />
+  <p id="insertResult"></p>
+</fieldset>
+<br /><br />
+<fieldset>
+<legend>Edit film in database</legend>
+<p><b>Enter ID of film to amend:</b></p>
+  <label>ID:</label>
+  <input type="text" name="editId" size="5" />	
+  <input type="button" value="Find" id="populateEdit"/>
+  <input type="button" value="Clear" id="clearEdit"/>
+  <p id="populateResult"></p>
+<br />
+<p><b>Edit details:</b></p>
+  <label>Title:</label><br />
+  <input type="text" name="editTitle" size="75"/>
+  <br /><br />
+  <label>Year:</label><br />
+  <input type="text" name="editYear" size="4" readonly="readonly" />
+  <br /><br />
+  <label>Director:</label><br />
+  <input type="text" name="editDirector" size="40" readonly="readonly" />
+  <br /><br />
+  <label>Stars:</label><br />
+  <input type="text" name="editStars" size="100" readonly="readonly" />
+  <br /><br />
+  <label>Review:</label><br />
+  <input type="text" name="editReview" size="100" readonly="readonly" />
+  <br /><br />
+  <input type="button" value="Amend" id="editFilm" disabled="disabled" />
+  <br />
+  <p id="updateResult"></p>
+</fieldset>
+<br/><br />
+<fieldset>
+<legend>Delete Film</legend>
+<br />
+  <label>ID:</label>
+  <input type="text" name="deleteId" size="5" />
+  <input type="button" value="Delete" id="deleteFilm"/>
+  <p id="deleteResult"></p>
+</fieldset>
+</div>
+<br />
+</body>
+</html>
