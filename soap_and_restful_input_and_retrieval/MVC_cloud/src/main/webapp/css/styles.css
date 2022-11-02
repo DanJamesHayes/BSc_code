@@ -1,0 +1,45 @@
+body {
+	COLOR: #000000;
+	FONT-FAMILY: lucida-sans, sans-serif;
+	FONT-SIZE: 10pt;
+	FONT-STYLE: normal;
+	FONT-VARIANT: normal;
+}
+legend {
+	FONT-WEIGHT: bold;
+	COLOR: white;
+	BACKGROUND-COLOR: teal;
+	BORDER: 1px solid black;
+	PADDING: 3px 2px;
+}
+h1 { 
+	COLOR: white;
+	BACKGROUND: teal; 
+	FONT-FAMILY: arial, helvetica, lucida-sans, sans-serif;
+	FONT-SIZE: 18pt;
+	FONT-STYLE: normal;
+	FONT-VARIANT: normal;
+	BORDER: 1px solid black;
+	PADDING: 3px 2px;
+}
+fieldset {
+	BACKGROUND-COLOR: #999999;
+	BORDER: 1px solid black;
+	PADDING: 3px 2px;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px;
+}
+.error { 
+	BACKGROUND-COLOR: yellow;
+	COLOR: red;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 20px;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	BORDER-STYLE: inset;
+}
